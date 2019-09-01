@@ -1,1 +1,2 @@
-web: gunicorn -w 4 test:app
+web: gunicorn test:app
+heroku ps:scale web=1
